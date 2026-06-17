@@ -328,6 +328,64 @@ footer{border-top:1px solid var(--line);padding:24px 48px;display:flex;justify-c
   .custody-right{grid-template-columns:1fr}
 }
 
+@media(max-width:480px){
+  /* Layout */
+  .hero{padding:80px 20px 48px;gap:32px}
+  .wrap{padding:0 20px}
+  nav{padding:0 20px}
+  .how-grid,.who-grid,.products-grid{grid-template-columns:1fr}
+  .numbers-grid,.strat-grid{grid-template-columns:1fr}
+  .custody-strip{grid-template-columns:1fr}
+  footer{flex-direction:column;text-align:center}
+  .footer-note{text-align:center}
+
+  /* Hero typography */
+  .hero-title{font-size:42px;letter-spacing:-1.5px}
+  .hero-sub{font-size:14px}
+  .hero-eyebrow{font-size:9px;letter-spacing:2px}
+
+  /* Hero stats */
+  .hero-stats{grid-template-columns:1fr 1fr;gap:1px}
+  .hs-val{font-size:32px}
+  .hs-label{font-size:10px}
+  .hs-sub{font-size:11px}
+
+  /* Section titles */
+  .sec-title{font-size:32px;letter-spacing:-1px}
+  .sec-eyebrow{font-size:9px}
+
+  /* CTA */
+  .cta-title{font-size:clamp(28px,8vw,48px);letter-spacing:-1px;line-height:1.1}
+  .cta-sub{font-size:13px}
+  .cta-form{flex-direction:column}
+  .cta-eyebrow{font-size:9px;letter-spacing:1px}
+
+  /* Cards */
+  .how-card{padding:28px 20px}
+  .who-card{padding:28px 20px}
+  .strat-card{padding:28px 20px}
+  .how-icon{font-size:28px}
+  .how-title,.who-title{font-size:16px}
+  .how-body,.who-body{font-size:12px}
+
+  /* Calc pane inner grids */
+  .calc-pane > div > div[style*="grid-template-columns:1fr 1fr"]{
+    display:block!important
+  }
+
+  /* Numbers grid single column */
+  .num-val{font-size:28px}
+  .num-label{font-size:9px}
+
+  /* Footer */
+  .footer-logo{font-size:14px}
+  .footer-note{font-size:8px}
+
+  /* Equity chart height */
+  #equityChart{height:200px!important}
+  .sec-title em{display:inline}
+}
+
 /* ── ROUTING TABLE ── */
 
 </style>
